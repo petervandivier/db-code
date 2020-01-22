@@ -2,8 +2,9 @@
 
 [CmdletBinding()]
 param (
-    [Parameter(Mandatory=$true)]
-    $database,
+    [Parameter(Mandatory=$true, Position=0)]
+    [Alias('d','dbname')]
+    $Database,
     
     [switch]
     $AllowClobber
